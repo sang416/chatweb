@@ -6,7 +6,7 @@ from datetime import datetime
 app = Flask(__name__)
 app.secret_key = 'secret!'
 socketio = SocketIO(app)
-
+# SystemError: PY_SSIZE_T_CLEAN macro must be defined for '#' formats
 # MySQL 연결
 db_config = {
     'host': 'sang416.mysql.pythonanywhere-services.com',
