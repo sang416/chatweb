@@ -6,7 +6,8 @@ from datetime import datetime
 app = Flask(__name__)
 app.secret_key = 'secret!'
 async_mode = 'threading'
-socketio = SocketIO(app, async_mode='threading', cors_allowed_origins="*", logger=True, engineio_logger=True)
+socketio = SocketIO(app, async_mode='threading', cors_allowed_origins="*", logger=True, engineio_logger=True, max_http_buffer_size=10**6)
+
 
 # MySQL 연결
 db_config = {
@@ -46,6 +47,10 @@ initialize_database()
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@socketio.on('disconnect')
+def handle_disconnect():
+    print('Client disconnected')
 
 # 웹소켓 메시지 처리
 @socketio.on('message')
