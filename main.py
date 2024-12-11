@@ -75,4 +75,4 @@ def handle_message(data):
     send({'nickname': nickname, 'message': message, 'timestamp': datetime.now().strftime('%H:%M:%S')}, broadcast=True)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    socketio.run(app)
