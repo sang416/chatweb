@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io({ transports: ['polling'] });
 
 const chat = document.getElementById('chat');
 const sendButton = document.getElementById('send');

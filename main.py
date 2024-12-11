@@ -6,8 +6,8 @@ from datetime import datetime
 app = Flask(__name__)
 app.secret_key = 'secret!'
 async_mode = 'threading'
-socketio = SocketIO(app, async_mode=async_mode, cors_allowed_origins="*")
-# SystemError: PY_SSIZE_T_CLEAN macro must be defined for '#' formats
+socketio = SocketIO(app, async_mode='threading', cors_allowed_origins="*", logger=True, engineio_logger=True)
+
 # MySQL 연결
 db_config = {
     'host': 'sang416.mysql.pythonanywhere-services.com',
@@ -15,6 +15,13 @@ db_config = {
     'password': 'sg13151447',
     'database': 'sang416$default'
 }
+
+# db_config = {
+#     'host': 'localhost',
+#     'user': 'root',
+#     'password': 'sg1315',
+#     'database': 'chatweb'
+# }
 
 # 데이터베이스 초기화
 def initialize_database():
