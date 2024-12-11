@@ -5,6 +5,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = 'secret!'
+async_mode = 'threading'
 socketio = SocketIO(app, async_mode=socketio.async_mode, cors_allowed_origins="*")
 # SystemError: PY_SSIZE_T_CLEAN macro must be defined for '#' formats
 # MySQL 연결
