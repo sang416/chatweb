@@ -9,10 +9,10 @@ socketio = SocketIO(app)
 
 # MySQL 연결
 db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'sg1315',
-    'database': 'chat_app'
+    'host': 'sang416.mysql.pythonanywhere-services.com',
+    'user': 'sang416',
+    'password': 'sg13151447',
+    'database': 'sang416$default'
 }
 
 # 데이터베이스 초기화
