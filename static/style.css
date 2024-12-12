@@ -19,24 +19,27 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+    max-width: 100%;
     background-color: #ABC0D1;
     padding: 10px;
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    box-sizing: border-box;
 }
 
 #nickname, #message {
+    min-width: 50px;
+    max-width: calc(50% - 5px);
     flex: 1;
     margin-right: 5px;
     padding: 10px;
     background-color: white;
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    box-sizing: border-box;
 }
 
 #send {
     padding: 10px;
-    flex-shrink: 0; /* Prevent button from shrinking */
-    background-color: white; /* Ensure button has consistent background */
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    flex-shrink: 0;
+    background-color: white;
+    box-sizing: border-box;
 }
 
 #chat div {
