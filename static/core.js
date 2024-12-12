@@ -30,6 +30,11 @@ messageInput.addEventListener('keydown', (event) => {
 socket.on('message', (data) => {
     const div = document.createElement('div');
     div.innerHTML = `<strong>${data.timestamp} [${data.nickname}]:</strong> ${data.message}`;
+    if (data.nickname === nicknameInput.value.trim()) {
+        div.classList.add('my-message'); // Add class for current user's messages
+    } else {
+        div.classList.add('other-message'); // Add class for other users' messages
+    }
     chat.appendChild(div);
     chat.scrollTop = chat.scrollHeight;
 });
