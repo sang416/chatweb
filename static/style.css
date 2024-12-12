@@ -34,7 +34,7 @@ body {
     background-color: #FFEB34; /* Added background color for speech bubbles */
     color: black; /* Added text color for speech bubbles */
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 5px;
     max-width: 80%;
 }
