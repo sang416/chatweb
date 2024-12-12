@@ -3,14 +3,23 @@ body {
     background-color: #ABC0D1; /* Added background color */
 }
 
-#chat {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    padding: 10px;
-    overflow-y: scroll;
-    height: 400px;
+#chat div {
+    width: 50%; /* Set width to 50% */
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    background-color: #FFEB34; /* Background color for speech bubbles */
+    color: black; /* Text color for speech bubbles */
+}
+
+.my-message {
+    margin-left: auto; /* Right-align the current user's messages */
+    text-align: left; /* Left-align text within the box */
+}
+
+.other-message {
+    margin-right: auto; /* Left-align messages from other users */
+    text-align: left; /* Left-align text within the box */
 }
 
 #message-box {
