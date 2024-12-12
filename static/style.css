@@ -21,6 +21,7 @@ body {
     width: 100%;
     background-color: #ABC0D1;
     padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 #nickname, #message {
@@ -28,10 +29,14 @@ body {
     margin-right: 5px;
     padding: 10px;
     background-color: white;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 #send {
     padding: 10px;
+    flex-shrink: 0; /* Prevent button from shrinking */
+    background-color: white; /* Ensure button has consistent background */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 #chat div {
