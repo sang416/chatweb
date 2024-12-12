@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #ABC0D1; /* Added background color */
 }
 
 #chat {
@@ -22,8 +23,18 @@ body {
     flex: 1;
     margin-right: 5px;
     padding: 10px;
+    background-color: white; /* Added background color for input fields */
 }
 
 #send {
     padding: 10px;
+}
+
+#chat div {
+    background-color: #FFEB34; /* Added background color for speech bubbles */
+    color: black; /* Added text color for speech bubbles */
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    max-width: 80%;
 }
