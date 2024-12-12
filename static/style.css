@@ -3,6 +3,37 @@ body {
     background-color: #ABC0D1; /* Added background color */
 }
 
+#chat {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+#message-box {
+    display: flex;
+    justify-content: space-between;
+    position: fixed; /* Position at the bottom */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+    background-color: #ABC0D1; /* Match background color */
+    padding: 10px;
+}
+
+#nickname, #message {
+    flex: 1;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: white; /* Added background color for input fields */
+}
+
+#send {
+    padding: 10px;
+}
+
 #chat div {
     width: 50%; /* Set width to 50% */
     padding: 5px 10px;
@@ -20,30 +51,4 @@ body {
 .other-message {
     margin-right: auto; /* Left-align messages from other users */
     text-align: left; /* Left-align text within the box */
-}
-
-#message-box {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-#nickname, #message {
-    flex: 1;
-    margin-right: 5px;
-    padding: 10px;
-    background-color: white; /* Added background color for input fields */
-}
-
-#send {
-    padding: 10px;
-}
-
-#chat div {
-    background-color: #FFEB34; /* Added background color for speech bubbles */
-    color: black; /* Added text color for speech bubbles */
-    padding: 5px 10px;
-    border-radius: 20px;
-    margin-bottom: 5px;
-    max-width: 80%;
 }
