@@ -10,7 +10,7 @@ body {
     border: 1px solid #ABC0D1;
     padding: 10px;
     overflow-y: scroll;
-    height: calc(100vh - 150px);
+    height: 80vh;
     margin-bottom: 70px;
 }
 

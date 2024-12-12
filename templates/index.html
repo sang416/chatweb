@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Web Chat</title>
+    <title>채 팅</title>
     <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body style="background-color: #ABC0D1;">
-    <h1 style="text-align: center;">Web Chat</h1>
+    <h1 style="text-align: center;">채 팅</h1>
     <div id="chat"></div>
     <div id="instructions" style="text-align: center; font-size: small;">
-        <h3>닉네임은 한번만 입력하고, 메세지 작성후 엔터키 치면 보내집니다.</h3>
+        <h3>※ 닉네임은 한번만 입력하고, 메세지 작성후 엔터키 치면 보내집니다.</h3>
     </div>
     <div id="message-box">
         <input type="text" id="nickname" placeholder="닉네임" required />
