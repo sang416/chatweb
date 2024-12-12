@@ -71,8 +71,10 @@ def handle_message(data):
     cursor.close()
     conn.close()
 
-    # 클라이언트로 메시지 전송
-    send({'nickname': nickname, 'message': message, 'timestamp': datetime.now().strftime('%H:%M:%S')}, broadcast=True)
+    # 클라이언트로 메시지 전송 (한국 시간)
+    korea_tz = pytz.timezone('Asia/Seoul')
+    korea_time = datetime.now(korea_tz).strftime('%H:%M:%S')
+    send({'nickname': nickname, 'message': message, 'timestamp': korea_time}, broadcast=True)
 
 if __name__ == '__main__':
     socketio.run(app)
