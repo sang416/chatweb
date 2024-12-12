@@ -10,7 +10,8 @@ body {
     border: 1px solid #ddd;
     padding: 10px;
     overflow-y: scroll;
-    height: 400px;
+    height: calc(100vh - 150px);
+    margin-bottom: 70px;
 }
 
 #message-box {
@@ -23,6 +24,7 @@ body {
     background-color: #ABC0D1;
     padding: 10px;
     box-sizing: border-box;
+    height: 60px;
 }
 
 #nickname, #message {
